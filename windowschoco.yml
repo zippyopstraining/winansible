@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Install git
+    win_chocolatey:
+      name: git
+      state: present
